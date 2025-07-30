@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>虚空织者：因果之茧 v0.4 Refactored</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <!-- 顶部资源栏 -->
+        <div id="top-bar">
+            <p>你拥有 <span id="sp-display">0</span> 奇点 (SP).</p>
+            <p>每秒生产: <span id="sps-display">0</span> SP</p>
+        </div>
+
+        <!-- 叙事区 -->
+        <div id="narrative-pane">
+            <p id="narrative-text">...</p>
+        </div>
+
+        <!-- 主要操作区 -->
+        <div id="main-actions">
+            <button id="manual-click-button">我.</button>
+        </div>
+
+        <!-- 织者列表 -->
+        <div id="weavers-container">
+            <!-- 由JS动态生成 -->
+        </div>
+
+        <!-- 转生区 -->
+        <div id="prestige-container">
+            <!-- 由JS动态生成 -->
+        </div>
+    </div>
+
+    <!-- 关键依赖和入口脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/decimal.js@10.4.3/decimal.min.js"></script>
+    <!-- 注意: type="module" 是启用模块化JS的关键 -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
